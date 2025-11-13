@@ -3,40 +3,9 @@
 Streamsense is a lightweight React web app for discovering movies and where to stream them. It integrates with public APIs (TMDB, OMDb, YouTube, Watchmode) to provide movie browsing, details, trailers, streaming availability, recommendations, and user favorites.
 
 
-**Key Features**
-
-- Browse popular and trending movies
-- Search movies and view detailed information (cast, synopsis, images)
-- Watch trailers and related videos (YouTube embeds)
-- Find streaming platforms where a movie is available (Watchmode integrations)
-- Save favorites and view recommendations
-- Light/Dark theme toggle
-
-**Tech Stack**
-
-- UI: React, Vite
-- Routing: React Router
-- Styling: plain CSS (project `src/css/`)
-- APIs: The Movie Database (TMDB), OMDb, YouTube Data API, Watchmode
-- Deployment: GitHub Pages (via `gh-pages`) or GitHub Actions
-
-Project structure (top-level)
-# Streamsense
-
 [Live Demo](https://Ayush-Chechi.github.io/Streamsense) • [Actions](https://github.com/Ayush-Chechi/Streamsense/actions)
 
----
 
-Streamsense is a modern, lightweight React app for discovering movies and where to stream them. It integrates with public APIs (TMDB, OMDb, YouTube, Watchmode) to show movie details, trailers, streaming availability, and personalized recommendations.
-
-
-## Demo
-
-Open the app in your browser:
-
-[https://Ayush-Chechi.github.io/Streamsense](https://Ayush-Chechi.github.io/Streamsense)
-
-> If the demo shows a 404, the site may still be building — check the Actions tab or Pages settings in the repository.
 
 ---
 
@@ -54,26 +23,28 @@ Placeholders (add your images to `public/screenshots/`):
 ![Homepage placeholder](public/screenshots/homepage.png)
 ![Details placeholder](public/screenshots/movie-details.png)
 
+
 ---
 
-## Key Features
+
+**Key Features**
 
 - Browse popular and trending movies
-- Search movies and view details (cast, synopsis, images)
-- Watch trailers (YouTube embeds)
-- Find streaming platforms (Watchmode)
-- Save favorites and get recommendations
-- Light / Dark theme toggle
+- Search movies and view detailed information (cast, synopsis, images)
+- Watch trailers and related videos (YouTube embeds)
+- Find streaming platforms where a movie is available (Watchmode integrations)
+- Save favorites and view recommendations
+- Light/Dark theme toggle
 
----
+**Tech Stack**
 
-## Tech Stack
+- UI: React, Vite
+- Routing: React Router
+- Styling: plain CSS (project `src/css/`)
+- APIs: The Movie Database (TMDB), OMDb, YouTube Data API, Watchmode
+- Deployment: GitHub Pages (via `gh-pages`) or GitHub Actions
 
-- React + Vite
-- React Router
-- Plain CSS (in `src/css/`)
-- TMDB, OMDb, YouTube Data API, Watchmode
-- Deployment: GitHub Pages (via Actions or `gh-pages`)
+
 
 ---
 
@@ -120,36 +91,6 @@ A concise React app to discover movies and where to stream them.
 
 ---
 
-## Demo
-
-https://Ayush-Chechi.github.io/Streamsense
-
-*(If you see a 404 shortly after pushing, the site may still be building — check Actions.)*
-
----
-
-## Screenshots
-
-Current image files in your project (used below):
-
-- Homepage: `Images/homepage.png`
-- Movie details: `Images/movie detail.png`
-
-Embed in markdown (example):
-
-```markdown
-![Homepage](Images/homepage.png)
-![Movie details](Images/movie%20detail.png)
-```
-
-Rendered below (these will show if the files exist in the repo):
-
-![Homepage](Images/homepage.png)
-![Movie details](Images/movie%20detail.png)
-
-If you prefer these images inside `public/screenshots/` (cleaner URLs), I can move and rename them.
-
----
 
 ## Features (short)
 
@@ -189,13 +130,6 @@ Or publish locally with `gh-pages`:
 ```powershell
 npx gh-pages -d dist
 ```
-
----
-
-## Notes
-
-- If CI fails on `npm ci`, run `npm install` locally and commit `package-lock.json`.
-- The app uses `vite.config.js` `base: '/Streamsense/'` and `BrowserRouter` `basename="/Streamsense"` so routes work on GitHub Pages.
 
 ---
 
