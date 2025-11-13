@@ -18,11 +18,6 @@ Add screenshots to `public/screenshots/` and reference them here. Example markdo
 ![Movie details](public/screenshots/movie-details.png)
 ```
 
-Placeholders (add your images to `public/screenshots/`):
-
-![Homepage placeholder](public/screenshots/homepage.png)
-![Details placeholder](public/screenshots/movie-details.png)
-
 
 ---
 
@@ -67,40 +62,6 @@ Streamsense/
 
 ---
 
-## Quick start (development)
-
-Requirements
-
-- Node.js (18+) and npm
-
-Run locally
-
-```powershell
-cd C:\Users\ayush\Desktop\Projects\Streamsense
-npm install
-npm run dev
-```
-
-Open:
-"""
-# Streamsense
-
-[Live Demo](https://Ayush-Chechi.github.io/Streamsense) • [Actions](https://github.com/Ayush-Chechi/Streamsense/actions)
-
-A concise React app to discover movies and where to stream them.
-
----
-
-
-## Features (short)
-
-- Browse & search movies
-- View details, trailers and streaming options
-- Save favorites and get recommendations
-- Light / Dark mode
-
----
-
 ## Quick start
 
 Requirements: Node.js (18+) and npm
@@ -113,23 +74,6 @@ npm run dev
 
 Open: `http://localhost:5173/Streamsense/`
 
----
-
-## Build & Deploy
-
-Build:
-
-```powershell
-npm run build
-```
-
-Deploy: GitHub Actions will build & publish to `https://Ayush-Chechi.github.io/Streamsense` on push to `main`.
-
-Or publish locally with `gh-pages`:
-
-```powershell
-npx gh-pages -d dist
-```
 
 ---
 
