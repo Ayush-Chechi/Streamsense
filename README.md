@@ -2,14 +2,15 @@
 
 Streamsense is a lightweight React web app for discovering movies and where to stream them. It integrates with public APIs (TMDB, OMDb, YouTube, Watchmode) to provide movie browsing, details, trailers, streaming availability, recommendations, and user favorites.
 
-Live Demo Link: https://Ayush-Chechi.github.io/Streamsense
+**[🎬 Live Demo](https://Ayush-Chechi.github.io/Streamsense)**
 
 ---
 
 ## Screenshots
 
-![Homepage](public/screenshots/homepage.png)
-![Movie details](public/screenshots/movie-details.png)
+![Homepage](Images/homepage.png)
+
+![Movie details](Images/movie%20detail.png)
 
 ---
 
@@ -36,6 +37,7 @@ Live Demo Link: https://Ayush-Chechi.github.io/Streamsense
 
 ## Project structure (top-level)
 
+```
 Streamsense/
 ├── public/                  # static assets/screenshots
 ├── src/
@@ -47,18 +49,40 @@ Streamsense/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
 ---
 
-## Quick start
+## Quick Start
 
-Requirements: Node.js (18+) and npm
+### Requirements
 
-cd C:\Users\ayush\Desktop\Projects\Streamsense
-npm install
-npm run dev
+- **Node.js** (version 18 or higher)
+- **npm** (comes with Node.js)
 
-Open: http://localhost:5173/Streamsense/
+### Steps
+
+1. **Clone or navigate to the project folder** (if not already there):
+   ```powershell
+   cd C:\Users\ayush\Desktop\Projects\Streamsense
+   ```
+
+2. **Install dependencies**:
+   ```powershell
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```powershell
+   npm run dev
+   ```
+
+4. **Open in your browser**:
+   ```
+   http://localhost:5173/Streamsense/
+   ```
+
+The site will reload automatically when you make changes!
 
 ---
 
