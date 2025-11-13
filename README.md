@@ -118,55 +118,96 @@ npm run dev
 ```
 
 Open:
+"""
+# Streamsense
 
+[Live Demo](https://Ayush-Chechi.github.io/Streamsense) • [Actions](https://github.com/Ayush-Chechi/Streamsense/actions)
+
+A concise React app to discover movies and where to stream them.
+
+---
+
+## Demo
+
+https://Ayush-Chechi.github.io/Streamsense
+
+*(If you see a 404 shortly after pushing, the site may still be building — check Actions.)*
+
+---
+
+## Screenshots
+
+Current image files in your project (used below):
+
+- Homepage: `Images/homepage.png`
+- Movie details: `Images/movie detail.png`
+
+Embed in markdown (example):
+
+```markdown
+![Homepage](Images/homepage.png)
+![Movie details](Images/movie%20detail.png)
 ```
-http://localhost:5173/Streamsense/
+
+Rendered below (these will show if the files exist in the repo):
+
+![Homepage](Images/homepage.png)
+![Movie details](Images/movie%20detail.png)
+
+If you prefer these images inside `public/screenshots/` (cleaner URLs), I can move and rename them.
+
+---
+
+## Features (short)
+
+- Browse & search movies
+- View details, trailers and streaming options
+- Save favorites and get recommendations
+- Light / Dark mode
+
+---
+
+## Quick start
+
+Requirements: Node.js (18+) and npm
+
+```powershell
+cd C:\Users\ayush\Desktop\Projects\Streamsense
+npm install
+npm run dev
 ```
+
+Open: `http://localhost:5173/Streamsense/`
 
 ---
 
 ## Build & Deploy
 
-Build for production:
+Build:
 
 ```powershell
 npm run build
 ```
 
-Option A — GitHub Actions (recommended)
+Deploy: GitHub Actions will build & publish to `https://Ayush-Chechi.github.io/Streamsense` on push to `main`.
 
-- The repository contains `.github/workflows/deploy.yml`. Push to `main` and Actions will build and publish to GitHub Pages at:
-
-```
-https://Ayush-Chechi.github.io/Streamsense
-```
-
-Option B — Manual publish with `gh-pages`:
+Or publish locally with `gh-pages`:
 
 ```powershell
-npm install
-npm run build
 npx gh-pages -d dist
 ```
 
 ---
 
-## Notes & Troubleshooting
+## Notes
 
-- If Pages shows a 404, check:
-  - Actions logs: `https://github.com/Ayush-Chechi/Streamsense/actions`
-  - Pages settings: `https://github.com/Ayush-Chechi/Streamsense/settings/pages`
-- If CI fails on `npm ci`, run `npm install` locally and commit the updated `package-lock.json`.
+- If CI fails on `npm ci`, run `npm install` locally and commit `package-lock.json`.
+- The app uses `vite.config.js` `base: '/Streamsense/'` and `BrowserRouter` `basename="/Streamsense"` so routes work on GitHub Pages.
 
 ---
 
-## Contributing
+## Contributing & License
 
-- Contributions welcome — open issues or PRs.
-
----
-
-## License
-
-This project is provided for educational purposes. See repository license or contact the author for reuse permissions.
+Contributions welcome. Educational use only.
+"""
 
