@@ -2,7 +2,7 @@
 
 Streamsense is a lightweight React web app for discovering movies and where to stream them. It integrates with public APIs (TMDB, OMDb, YouTube, Watchmode) to provide movie browsing, details, trailers, streaming availability, recommendations, and user favorites.
 
-**[🎬 Live Demo](https://Ayush-Chechi.github.io/Streamsense)**
+**[https://Ayush-Chechi.github.io/Streamsense](https://Ayush-Chechi.github.io/Streamsense)**
 
 ---
 
