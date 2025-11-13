@@ -22,12 +22,75 @@ Streamsense is a lightweight React web app for discovering movies and where to s
 - Deployment: GitHub Pages (via `gh-pages`) or GitHub Actions
 
 Project structure (top-level)
+# Streamsense
+
+[Live Demo](https://Ayush-Chechi.github.io/Streamsense) • [Actions](https://github.com/Ayush-Chechi/Streamsense/actions)
+
+---
+
+Streamsense is a modern, lightweight React app for discovering movies and where to stream them. It integrates with public APIs (TMDB, OMDb, YouTube, Watchmode) to show movie details, trailers, streaming availability, and personalized recommendations.
+
+<!-- badges -->
+![GitHub Pages](https://img.shields.io/badge/pages-deployed-brightgreen)
+![Vite](https://img.shields.io/badge/bundler-vite-blue)
+![React](https://img.shields.io/badge/framework-react-61dafb)
+
+---
+
+## Demo
+
+Open the app in your browser:
+
+[https://Ayush-Chechi.github.io/Streamsense](https://Ayush-Chechi.github.io/Streamsense)
+
+> If the demo shows a 404, the site may still be building — check the Actions tab or Pages settings in the repository.
+
+---
+
+## Screenshots
+
+Add screenshots to `public/screenshots/` and reference them here. Example markdown (replace filenames with your screenshots):
+
+```markdown
+![Homepage](public/screenshots/homepage.png)
+![Movie details](public/screenshots/movie-details.png)
+```
+
+Placeholders (add your images to `public/screenshots/`):
+
+![Homepage placeholder](public/screenshots/homepage.png)
+![Details placeholder](public/screenshots/movie-details.png)
+
+---
+
+## Key Features
+
+- Browse popular and trending movies
+- Search movies and view details (cast, synopsis, images)
+- Watch trailers (YouTube embeds)
+- Find streaming platforms (Watchmode)
+- Save favorites and get recommendations
+- Light / Dark theme toggle
+
+---
+
+## Tech Stack
+
+- React + Vite
+- React Router
+- Plain CSS (in `src/css/`)
+- TMDB, OMDb, YouTube Data API, Watchmode
+- Deployment: GitHub Pages (via Actions or `gh-pages`)
+
+---
+
+## Project structure (top-level)
 
 ```
 Streamsense/
-├── public/                  # static assets
+├── public/                  # static assets (put screenshots in public/screenshots/)
 ├── src/
-│   ├── components/          # React components (NavBar, MovieCard, etc.)
+│   ├── components/          # React components
 │   ├── pages/               # route pages (Home, MovieDetails, Favorites...)
 │   ├── services/            # API helpers (api.js)
 │   └── css/                 # styles
@@ -38,13 +101,15 @@ Streamsense/
 └── README.md
 ```
 
-Getting started (local development)
+---
+
+## Quick start (development)
 
 Requirements
 
 - Node.js (18+) and npm
 
-Install dependencies and run the dev server
+Run locally
 
 ```powershell
 cd C:\Users\ayush\Desktop\Projects\Streamsense
@@ -52,34 +117,31 @@ npm install
 npm run dev
 ```
 
-Open the app in your browser at:
+Open:
 
 ```
 http://localhost:5173/Streamsense/
 ```
 
-Notes about routing and base path
+---
 
-- The app is configured with `vite.config.js` `base: '/Streamsense/'` and `BrowserRouter` has `basename="/Streamsense"`. This ensures routes work correctly when the site is served from `https://<user>.github.io/Streamsense`.
+## Build & Deploy
 
-Build for production
+Build for production:
 
 ```powershell
 npm run build
 ```
 
-Deploying
-
 Option A — GitHub Actions (recommended)
 
-- This repository includes a workflow `.github/workflows/deploy.yml` which builds the site and deploys the `dist` folder to GitHub Pages on push to `main`.
-- Make sure your repository is pushed to `https://github.com/Ayush-Chechi/Streamsense` and push your changes to `main`. GitHub Actions will run automatically and publish the site to:
+- The repository contains `.github/workflows/deploy.yml`. Push to `main` and Actions will build and publish to GitHub Pages at:
 
 ```
 https://Ayush-Chechi.github.io/Streamsense
 ```
 
-Option B — Publish with `gh-pages` (one-off or local publish)
+Option B — Manual publish with `gh-pages`:
 
 ```powershell
 npm install
@@ -87,20 +149,24 @@ npm run build
 npx gh-pages -d dist
 ```
 
-This will create and push a `gh-pages` branch and publish the `dist` folder to GitHub Pages.
+---
 
-Troubleshooting
+## Notes & Troubleshooting
 
-- If you see a 404 on the GitHub Pages URL, check the repository Pages settings and the Actions workflow run logs:
-	- Actions: `https://github.com/Ayush-Chechi/Streamsense/actions`
-	- Pages: `https://github.com/Ayush-Chechi/Streamsense/settings/pages`
-- If `npm ci` fails in CI because `package-lock.json` is out of sync, run `npm install` locally and commit the updated `package-lock.json`.
+- If Pages shows a 404, check:
+  - Actions logs: `https://github.com/Ayush-Chechi/Streamsense/actions`
+  - Pages settings: `https://github.com/Ayush-Chechi/Streamsense/settings/pages`
+- If CI fails on `npm ci`, run `npm install` locally and commit the updated `package-lock.json`.
 
-Contributing
+---
 
-- Contributions are welcome. Open issues or pull requests.
+## Contributing
 
-License
+- Contributions welcome — open issues or PRs.
 
-This project is provided for educational purposes. See the repository license (if any) or contact the author for reuse permissions.
+---
+
+## License
+
+This project is provided for educational purposes. See repository license or contact the author for reuse permissions.
 
